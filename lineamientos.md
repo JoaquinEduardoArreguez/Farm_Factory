@@ -1,4 +1,4 @@
-#  Farm Factory, Lineamientos 
+#  Farm Factory, Lineamientos
 
 Éste proyecto pretende generar un sistema completo de hidroponia, lo más automatizado posible.
 Está pensado para una producción a escala casera, aunque el sistema puede ser extendido a escalas mayores añadiendo el hardware correspondiente.
@@ -37,3 +37,5 @@ Se debe desarrollar un sistema completo de control por software y hardware para 
 * Tener en cuenta insectos, hongos y problemas comunes en cultivos.
 
 * Herrumbre, evitar partes metálicas en contacto con agua.
+
+* El tubo deba mantener agua todo el tiempo para evitar calentamiento en su interior.(Efecto invernadero)
