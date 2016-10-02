@@ -1,38 +1,53 @@
+#include "farm_factory.h"
 #include <stdint.h>
+#include <stdio.h>
 
-/* Struct que almacena los niveles de nitrogeno, fósoforo , potasio y
-   micromoléculas varias para un cultivo determinado.  */
-struct NPKM {
-  uint8_t n, p, k, m;
-};
+void actualizar_sens_luz(struct sensor *self) { self->valor = 10; }
+void actualizar_sens_agua(struct sensor *self) { self->valor = 20; }
+void actualizar_sens_humedad(struct sensor *self) { self->valor = 30; }
 
-/*  Struct para valores de sensores de niveles de agua y luz. */
-struct sensor {
-  uint8_t sens_agua, pin_sens_agua, sens_luz, pin_sens_luz;
+struct farm farm1;
+struct sensores sensores1;
+struct sensor sens_agua, sens_luz, sens_humedad;
+struct NPKM npkm1 = {100, 100, 100, 100};
+
+void print_farm_info(struct farm *self) {
+  printf("nombre_cultivo\t:\t%s\n", self->nombre_cultivo);
+  printf("niveles de mezcla:\n\tN: %d\n\tP: %d\n\tK: %d\n\tM: %d\n",
+         self->mezcla->n, self->mezcla->p, self->mezcla->k, self->mezcla->m);
+  printf("N sensores\t:\t%d\n", self->sensores->n_sensores);
+  for (int i = 0; i < self->sensores->n_sensores; i++) {
+    printf("Sensor %s\t\tpin %d\t\tvalor %d\n",
+           (self->sensores->array_sensores)[i].nombre_sensor,
+           (self->sensores->array_sensores)[i].pin,
+           (self->sensores->array_sensores)[i].valor);
+  }
 }
 
-/*  Información básica para un cultivo determinado. */
-struct farm {
-  uint8_t *nombre_cultivo;
-  struct NPKM *mezcla;
-  struct sensor *sensor;
-  void (*constructor)(uint8_t *nombre_cultivo, uint8_t nivel_luz,
-                      struct NPKM *mezcla);
-  void (*sensar)(struct sensor *sensor);
-};
+int main(void) {
+  init_sensor(&sens_agua, "agua", 0, 0, actualizar_sens_agua);
+  init_sensor(&sens_humedad, "humedad", 1, 0, actualizar_sens_humedad);
+  init_sensor(&sens_luz, "luz", 2, 0, actualizar_sens_luz);
 
-/*  Función constructora de farms.  */
-void constructor(struct farm *self, uint8_t *nombre_cultivo,
-                 struct sensor *sensor, struct NPKM *mezcla) {
-  self->nombre_cultivo = nombre_cultivo;
-  self->sensor = sensor;
-  self->mezcla = mezcla;
+  sensores1.n_sensores = 3;
+  sensores1.actualizar = actualizar_sensores;
+  struct sensor array_sensores[3] = {sens_agua, sens_luz, sens_humedad};
+  sensores1.array_sensores = array_sensores;
+
+  init_farm(&farm1);
+  (*farm1.constructor)(&farm1, "lechuga", &sensores1, &npkm1);
+
+  printf("%s\n", "INICIO");
+
+  print_farm_info(&farm1);
+
+  printf("%s\n", "Antes del sensado");
+
+  (*farm1.sensar)(&farm1);
+
+  printf("%s\n", "Despues del sensado");
+
+  print_farm_info(&farm1);
+
+  return 0;
 }
-
-/*  Dado un conjunto sensor determinado, actualiza sus datos. */
-void sensar(struct sensor *sensor) {
-  sensor->sens_agua = get_sens_agua(self->pin_sens_agua);
-  sensor->sens_luz = get_sens_luz(self->pin_sens_luz);
-}
-
-void main(void) {}

@@ -11,6 +11,7 @@ Se debe desarrollar un sistema completo de control por software y hardware para 
 
  *  Low Cost y fácil de armar / implementar.
  *  Mecánica fiable.
+ *  Silencioso.
  *  Pensado para uso en interiores así como en exteriores.
  *  Tamaño reducido.
  *  Seguro, los alimentos no deben alterarse por ningún componente del sistema. (Adhesivos en cañerías,¿?,¿?)
@@ -22,9 +23,9 @@ Se debe desarrollar un sistema completo de control por software y hardware para 
 
 * Para las tuberías se usarán caños de PVC.
 * La iluminación artificial será unificada, y de intensidad variable.
-* < Definir actuadores para paso de agua  >
-* < Definir la forma de movilizar el agua >
-* < Definir la forma de mezclar nutrientes en el agua >
+* < Definir actuadores para paso de agua  >(electroválvulas lavarropas)
+* < Definir la forma de movilizar el agua >(gravedad)
+* < Definir la forma de mezclar nutrientes en el agua >(¿electroválvulas + motor?)
 
 
 ***Problemas que probablemente se presenten:***
