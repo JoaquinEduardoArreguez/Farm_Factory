@@ -1,4 +1,4 @@
-# **  Farm Factory, Lineamientos  **
+#  Farm Factory, Lineamientos 
 
 Éste proyecto pretende generar un sistema completo de hidroponia, lo más automatizado posible.
 Está pensado para una producción a escala casera, aunque el sistema puede ser extendido a escalas mayores añadiendo el hardware correspondiente.
