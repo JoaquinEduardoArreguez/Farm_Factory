@@ -1,6 +1,7 @@
 #include "actuadores.h"
 #include "sensado.h"
 #include <stdint.h>
+#include <stdio.h>
 
 #pragma once
 
@@ -69,4 +70,19 @@ void init_farm(struct farm *self) {
   self->constructor = construir_farm;
   self->sensar = sensar;
   self->actuar = actuar;
+}
+
+/*  Imprime la Información de una "farm" particular (que se pasa como
+ * parámetro). */
+void print_farm_info(struct farm *self) {
+  printf("nombre_cultivo\t:\t%s\n", self->nombre_cultivo);
+  printf("niveles optimos de mezcla:\n\tN: %d\n\tP: %d\n\tK: %d\n\tM: %d\n",
+         self->mezcla->n, self->mezcla->p, self->mezcla->k, self->mezcla->m);
+  printf("N sensores\t:\t%d\n", self->sensores->n_sensores);
+  for (int i = 0; i < self->sensores->n_sensores; i++) {
+    printf("Sensor %s\t\tpin %d\t\tvalor %d\n",
+           (self->sensores->array_sensores)[i].nombre_sensor,
+           (self->sensores->array_sensores)[i].pin,
+           (self->sensores->array_sensores)[i].valor);
+  }
 }
