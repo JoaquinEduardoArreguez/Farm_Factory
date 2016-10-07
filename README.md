@@ -1,5 +1,5 @@
 # Farm Factory
-**Conseguí tu propia granja hidropónica totalmente automatizada con Farm Factory.**
+**Tu propio cultivo hidropónico, totalmente automatizado con Farm Factory.**
 
 Deberá incluir:
 * Software de control sobre un sistema embebido basado en AVR.
@@ -7,3 +7,14 @@ Deberá incluir:
 * Planos mecánicos.
 * Diagrama de circuito electrónico.
 * PBC para imprimir.
+
+***Guía de archivos***
+>  
+**lineamientos.md**  
+Lineamientos de diseño y desarrollo propuestos para el proyecto.  
+>
+**links.md**  
+Información útil sobre Hidroponia, cultivos y actuadores en general.  
+>
+**actuadores.md**  
+Listado de actuadores del sistema, con descripción.
