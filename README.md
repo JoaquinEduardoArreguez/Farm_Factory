@@ -18,4 +18,4 @@ Información útil sobre Hidroponia, cultivos y actuadores en general.
 **actuadores.md**  
 Listado de actuadores del sistema, con descripción.
 
-![farmfactory_goodfellas](/images/deniro.png)
+![deniro](https://github.com/JoaquinEduardoArreguez/Farm_Factory/blob/master/images/deniro.png)
