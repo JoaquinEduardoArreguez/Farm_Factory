@@ -1,0 +1,6 @@
+{
+  "name": "Farm Factory",
+  "tagline": "Farm Factory is a fully automated system to control hydroponic farms.",
+  "body": "# Farm Factory\r\n**Tu propio cultivo hidropónico, totalmente automatizado con Farm Factory.**\r\n\r\n**Debe incluir**\r\n>* Software de control sobre un sistema embebido basado en AVR.\r\n* Planos mecánicos.\r\n* Diagrama de circuito electrónico.\r\n* PBC para imprimir.\r\n\r\n***Guía de archivos***\r\n>  \r\n**lineamientos.md**  \r\nLineamientos de diseño y desarrollo propuestos para el proyecto.  \r\n>\r\n**links.md**  \r\nInformación útil sobre Hidroponia, cultivos y actuadores en general.  \r\n>\r\n**actuadores.md**  \r\nListado de actuadores del sistema, con descripción.\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
