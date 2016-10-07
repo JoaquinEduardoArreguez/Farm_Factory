@@ -6,6 +6,8 @@
 **Sobre Botánica e Hidroponia en general**  
 Videos e información general, *introducción*.
 
+* *https://openfarm.cc/en/crops/tomato* Base de datos WEB, info sobre cultivos en particular.
+
 * *http://www.hidroponiacasera.net/guia-basica-de-nutrientes-para-hidroponia/*
 
 * *https://www.youtube.com/watch?v=VfEBXSXk2fQ*
