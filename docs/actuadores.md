@@ -17,7 +17,7 @@ https://goo.gl/4ZsnwG Mercadolibre
 .
 >**sensor de temperatura**  
 *Sensor electrónico para medir temperatura. Varios voltajes, baratos y con buena precisión. Fáciles de conseguir. El DS18B20 es digital, usa protocolo ONE-WIRE, y se pueden añadir varios a una sola línea, puede ahorrar muchos pines del microcontrolador.*  
-1 pin  analógico.  
+1 pin  analógico/digital.  
 >Conocer la temperatura dentro y fuera del recipiente de cultivo, para evitar maltratarlos.  
 https://goo.gl/BDJ6KM Datasheet DS18B20  
 https://goo.gl/gKukcm Mercadolibre DS18B20  
