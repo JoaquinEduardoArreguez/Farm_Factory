@@ -9,7 +9,7 @@
 
 ### Guía de archivos
 
-> 
+>
 **Flowchart.md**  
 Diagramas de flujo del sistema.
 
@@ -22,6 +22,3 @@ Información útil sobre Hidroponia, cultivos y actuadores en general.
 >
 **actuadores.md**  
 Listado de actuadores del sistema, con descripción.
-
-## Deniro y la Hidroponia...
-![deniro](/images/deniro.png)
