@@ -1,5 +1,11 @@
 # Farm Factory
-###### Tu propio cultivo hidropónico, totalmente automatizado con Farm Factory.
+###### Tu propio cultivo hidropónico, totalmente automatizado con Farm Factory.  
+Wanna join the project? email me to  
+ ***arreguez.joaquin@gmail.com*** with some info about you.  
+ 
+Querés sumarte al proyecto? Mandame un mail a  
+ ***arreguez.joaquin@gmail.com*** con un poco de información sobre tus conocimientos.
+####
 
 ### Debe incluir
 >* Software de control sobre un sistema embebido basado en AVR.
